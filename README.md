@@ -1,5 +1,59 @@
-# monteCarlo
+# monteCarlo Simulator
 DS5100 Final Project
+Hariss Rai
+
+Install numpy and pandas before installing this.
+
+
+Installation
+pip install MonteCarloMain 
+  or pip install e-. in package folder
+from monteCarloMain import Die, Game, Analyzer
+
+
+Die Class
+# Create a six-sided die
+my_die = Die([1, 2, 3, 4, 5, 6])
+
+# Create a coin (Heads or Tails) and weight it towards Heads
+weighted_coin = Die(['Heads', 'Tails'])
+weighted_coin.modify_weight('Heads', 0.75)
+
+# Roll a die
+weighted_coin.roll()
+
+# Show roll sides + weighta
+show_weights(weighted_coin)
+
+Game Class
+
+# Play 88 games
+flip = show_weights.play(88)
+ # Get roll results
+flip.get_results()
+
+Die Class
+
+# Calc number of Jackpots (all the same result)
+flip.calculate_jackpot()
+
+# Get dataframe of rolls that were jackpots
+flip.get_jackpot_rolls()
+
+# Calculate combinations of rolls
+calculate_combinations.roll()
+
+# calculate permutation of rolls
+flip.calculate_combinations(include_permutations=True)
+
+# Get datafram for freq of combinations/perms
+flip.get_combinations_data()
+
+# Counts how many times each face value appears in each roll across all dice
+flip.count_faces_per_roll()
+
+# Get counts of each face per roll.
+flip.get_face_counts_data()
 
 
 
